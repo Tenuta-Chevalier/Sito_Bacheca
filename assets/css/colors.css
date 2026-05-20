@@ -1,18 +1,27 @@
 :root{
-    --color-main-black: #0B0B0B;
-    --color-main-anthrax: #1A1A1A;
-    --color-main-white: #F5F5F5;
-    --color-main-gold: #C6A65B;
+    /* Warm dark luxury palette (customer spec close-range) */
+    --color-main-black: #0a0a0a;
+    --color-main-anthrax: #1a120d; /* warm dark brown */
+    --color-main-anthrax-2: #2d1d14; /* bronze brown */
 
-    --color-gold-light: #D4B76A;
-    --color-gold-dark: #A0884A;
-    --color-gold-pale: rgba(198, 166, 91, 0.15);
-    --color-gold-border: rgba(198, 166, 91, 0.35);
+    --color-main-white: #f4eee6; /* warm ivory */
+    --color-main-gold: #c6a16a; /* luxury gold */
+    --color-gold-light: #d8c29a; /* soft champagne gold */
+    --color-gold-dark: #a0884a;
 
-    --color-overlay-dark: rgba(11, 11, 11, 0.75);
-    --color-overlay-light: rgba(11, 11, 11, 0.45);
-    --color-card-bg: #141414;
-    --color-text-muted: #B0B0B0;
+    --color-gold-pale: rgba(198, 161, 106, 0.15);
+    --color-gold-border: rgba(198, 161, 106, 0.35);
+    --color-gold-border-strong: rgba(198, 161, 106, 0.55);
+
+    --color-text-muted: #b8a48a;
+    --color-card-bg: #0f0f0f;
+
+    --color-overlay-dark: rgba(10, 10, 10, 0.75);
+    --color-overlay-light: rgba(10, 10, 10, 0.45);
+
+    /* Beige strip */
+    --color-strip-beige: #e9dfc9;
+    --color-strip-text: #3a2a1e;
 
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Quicksand', sans-serif;
@@ -21,4 +30,5 @@
     --transition-medium: 0.35s ease;
     --transition-slow: 0.5s ease;
 }
+
 
