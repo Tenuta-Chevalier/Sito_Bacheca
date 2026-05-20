@@ -27,7 +27,7 @@
                 <li><a href="company.html">Company</a></li>
                 <li><a href="wines.html">Wines</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li style="display:none"><a style="display:none" href="events.html">Events</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
             <button class="hamburger" aria-label="Menu">
@@ -45,58 +45,65 @@
         <a href="company.html">Company</a>
         <a href="wines.html">Wines</a>
         <a href="gallery.html">Gallery</a>
-        <a href="events.html">Events</a>
+        <a style="display:none" href="events.html">Events</a>
         <a href="contacts.html">Contacts</a>
     </div>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-bg" style="background-image: url('../../templates_and_more/SITO INTERNET/Immagini/Panorama.PNG');"></div>
+    <!-- Hero (Luxury Split) -->
+    <section class="hero hero-sm hero-split">
+        <div class="hero-bg" style="background-image: url('../../templates_and_more/SITO INTERNET/Immagini/panorama_improved.jpg');"></div>
+
         <div class="hero-overlay"></div>
+
         <div class="hero-content fade-in-up">
-            <span class="section-label">Valpolicella Classica</span>
-            <h1>Tenuta Chevalier</h1>
-            <div class="gold-divider"></div>
-            <p>"The charm of a very high quality wine is the relationship that is created between what is found in the glass, and the person who relies on their senses to understand it; giving rise to an intimate and personal relationship"</p>
-            <a href="company.html" class="btn btn-primary">Discover Our Story</a>
+            <div class="hero-left">
+                <span class="section-label">Valpolicella Classica</span>
+                <h1>Tenuta Chevalier</h1>
+                <div class="gold-divider gold-divider-left"></div>
+                <p>"The charm of a very high quality wine is the relationship that is created between what is found in the glass, and the person who relies on their senses to understand it; giving rise to an intimate and personal relationship"</p>
+                <a href="company.html" class="btn-luxury" aria-label="Discover Our Story">Discover Our Story</a>
+            </div>
+
+            
         </div>
     </section>
 
-    <!-- Featured Section -->
+    <!-- Producer / Philosophy split -->
     <section class="section-padding bg-black">
         <div class="container">
-            <div class="section-header fade-in-up">
-                <span class="section-label">Our Estate</span>
-                <h2>Tenuta Chevalier</h2>
-                <p>Organic since 2009, located in the heart of Valpolicella Classica between Marano and Negrar. Experience our biodynamic practices and historic vineyards at 350m altitude.</p>
-            </div>
-
-            <div class="flex gap-3 flex-col md:flex-row fade-in-up">
-                <div class="flex-1">
-                    <img src="../../templates_and_more/SITO INTERNET/Immagini/PY2A0352-Modifica.jpg" alt="Vineyards at Tenuta Chevalier" class="feature-img">
+            <div class="split-producer">
+                <div class="producer-img producer-block">
+                    <div class="crest-watermark">
+                        <img src="../../templates_and_more/SITO INTERNET/Immagini/Logo.png" alt="" />
+                    </div>
+                    <img src="../../templates_and_more/SITO INTERNET/Immagini/RocchettoCorvinaVerona_2x1.jpg" alt="The Chevalier Estate in the cellar" />
                 </div>
-                <div class="feature-text flex-1">
-                    <h3>The Chevalier Estate</h3>
-                    <p class="quote">"Knowing, touching, letting yourself be accompanied and experiencing an emotion: this is what we offer you here at the Chevalier Estate. Come and discover our pearls of historic Valpolicella wine and get in tune with the unique atmosphere of our company."</p>
+
+                <div class="producer-text">
+                    <span class="section-label">The Producer</span>
+                    <h2>The Chevalier Estate</h2>
+                    <p>Organic since 2009, located in the heart of Valpolicella Classica between Marano and Negrar. Experience our biodynamic practices and historic vineyards at 350m altitude.</p>
                     <a href="company.html" class="btn btn-outline">Our Philosophy</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Wines -->
+    <!-- Wine collection grid -->
     <section class="section-padding-lg bg-anthrax">
         <div class="container">
             <div class="section-header fade-in-up">
-                <span class="section-label">Featured Wines</span>
-                <h2>Our Jewels</h2>
-                <p>Discover our flagship wines from the noble Valpolicella terroir</p>
+                <span class="section-label">THE GREAT WINES OF VALPOLICELLA</span>
+                <h2>THE GREAT WINES OF VALPOLICELLA</h2>
+                <p>Discover our selection of classic Valpolicella masterpieces</p>
             </div>
 
-            <div class="grid grid-3 gap-3 fade-in-up">
+            <div class="wines-grid fade-in-up">
                 <div class="card wine-card">
                     <div class="card-img-wrap">
-                        <img src="../../templates_and_more/SITO INTERNET/Immagini/AmaroneClassico.jpeg" alt="Amarone della Valpolicella Classico DOCG" class="card-img">
+                        <a class="card-link" href="../../templates_and_more/SITO INTERNET/DescrPDFs/AmaroneValpolicellaDescription.pdf" target="_blank" rel="noopener">
+                            <img src="../../templates_and_more/SITO INTERNET/Immagini/AmaroneClassico.jpeg" alt="Amarone della Valpolicella Classico DOCG" class="card-img">
+                        </a>
                     </div>
                     <div class="card-body">
                         <div class="wine-meta">
@@ -114,7 +121,9 @@
 
                 <div class="card wine-card">
                     <div class="card-img-wrap">
-                        <img src="../../templates_and_more/SITO INTERNET/Immagini/RipassoValpollicellaClassicoSuperiore.jpeg" alt="Valpolicella Classico Superiore" class="card-img">
+                        <a class="card-link" href="../../templates_and_more/SITO INTERNET/DescrPDFs/RipassoSuperioreDescription.pdf" target="_blank" rel="noopener">
+                            <img src="../../templates_and_more/SITO INTERNET/Immagini/ValpollicellaRipasso.jpeg" alt="Valpolicella Classico Superiore" class="card-img">
+                        </a>
                     </div>
                     <div class="card-body">
                         <div class="wine-meta">
@@ -132,15 +141,40 @@
 
                 <div class="card wine-card">
                     <div class="card-img-wrap">
-                        <img src="../../templates_and_more/SITO INTERNET/Immagini/ReciotoFront.jpeg" alt="Passito Bianco Pensiero" class="card-img">
+                            <a class="card-link" href="../../templates_and_more/SITO INTERNET/DescrPDFs/RocchettoDescription.pdf" target="_blank" rel="noopener">
+                                <img src="../../templates_and_more/SITO INTERNET/Immagini/RocchettoCorvinaVerona1.jpg" alt="Rocchetto IGT Rosso Verona" class="card-img">
+                            </a>
+
                     </div>
                     <div class="card-body">
                         <div class="wine-meta">
-                            <span class="wine-tag">Passito</span>
+                            <span class="wine-tag">Rocchetto</span>
                             <span class="wine-tag">IGT</span>
                         </div>
-                        <h3>Passito Bianco "Pensiero"</h3>
-                        <p class="gold-text">Deep golden with honeyed fruit and velvety texture</p>
+                        <h3>Rocchetto</h3>
+                        <p class="gold-text">100% Corvina with ancient Raetian technique and deep concentration</p>
+                        <div class="wine-sections">
+                            <h4>PAIRING</h4>
+                            <p>Game, truffle risotto, aged cheeses, meditative tasting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card wine-card">
+                    <div class="card-img-wrap">
+                            <a class="card-link" href="../../templates_and_more/SITO INTERNET/DescrPDFs/ReciotoDescription.pdf" target="_blank" rel="noopener">
+                                <img src="../../templates_and_more/SITO INTERNET/Immagini/ReciotoFront.jpeg" alt="Recioto" class="card-img">
+                            </a>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="wine-meta">
+                            <span class="wine-tag">Recioto</span>
+                            <span class="wine-tag">IGT</span>
+                        </div>
+                        <h3>Recioto</h3>
+                        <p class="gold-text">Deep golden with ripe fruit and a velvety texture, for a soft and enveloping finish.</p>
+
                         <div class="wine-sections">
                             <h4>PAIRING</h4>
                             <p>Dry pastries, fresh Veronese cheeses</p>
@@ -149,61 +183,79 @@
                 </div>
             </div>
 
-            <div class="text-center fade-in-up">
+            <div class="text-center fade-in-up" style="margin-top:2.4rem;">
                 <a href="wines.html" class="btn btn-primary">View All Wines</a>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Preview -->
-    <section class="section-padding bg-black">
+    <!-- Featured selections (two sparkling wines) -->
+    <section class="section-padding-lg bg-black">
         <div class="container">
-            <div class="section-header fade-in-up">
-                <span class="section-label">Moments</span>
-                <h2>Gallery</h2>
-            </div>
+            <div class="featured-selections">
+                <div>
+                    <div class="section-header fade-in-up" style="text-align:left; margin-bottom:0;">
+                        <span class="section-label">Featured Selections</span>
+                        <h2>Rocchetto & Recioto</h2>
+                        <p>Two iconic expressions—Rocchetto and Recioto—crafted for Valpolicella Classica.</p>
 
-            <div class="gallery-grid">
-                <div class="gallery-item fade-in-up">
-                    <img src="../../templates_and_more/SITO INTERNET/Immagini/PY2A0411-fuoco castagne.jpg" alt="Vineyard harvest">
+                    </div>
                 </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="../../templates_and_more/SITO INTERNET/Immagini/WhatsApp Image 2026-03-11 at 19.53.28 (2).jpeg" alt="Barrel aging">
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="../../templates_and_more/SITO INTERNET/Immagini/PY2A0420.jpg" alt="Estate panorama">
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="../../templates_and_more/SITO INTERNET/Immagini/WhatsApp Image 2026-03-11 at 19.53.29 (2).jpeg" alt="Vineyard details">
-                </div>
-            </div>
 
-            <div class="text-center fade-in-up">
-                <a href="gallery.html" class="btn btn-outline">Explore Gallery</a>
+                <div class="featured-right">
+                    <div class="feature-showcase fade-in-up">
+                        <div class="showcase-top">
+                            <div>
+                                <span class="section-label">Rocchetto</span>
+                                <h3 style="margin:0;">Rocchetto IGT</h3>
+                                <div class="hero-quote" style="border-left:none; padding-left:0; max-width:none; margin-top:0.9rem;">Intense and deep: Corvina in purezza, with elegance and character.</div>
+
+                            </div>
+                            <img src="../../templates_and_more/SITO INTERNET/Immagini/RocchettoCorvinaVerona1.jpg" alt="Rocchetto" class="card-img" style="height:220px; width: auto; border:1px solid rgba(198,161,106,0.25); border-radius:6px; object-fit:cover;">
+
+                        </div>
+                    </div>
+
+                    <div class="feature-showcase fade-in-up">
+                        <div class="showcase-top">
+                            <div>
+                                <span class="section-label">Recioto</span>
+                                <h3 style="margin:0;">Recioto</h3>
+                                <div class="hero-quote" style="border-left:none; padding-left:0; max-width:none; margin-top:0.9rem;">Deep golden yellow with notes of ripe fruit: soft, velvety, enveloping.</div>
+
+                            </div>
+                            <img src="../../templates_and_more/SITO INTERNET/Immagini/ReciotoFront.jpeg" alt="Recioto" class="card-img" style="height:220px; width: auto; border:1px solid rgba(198,161,106,0.25); border-radius:6px; object-fit:cover;">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section-padding-lg bg-anthrax">
+    <!-- Values strip -->
+    <section class="values-strip">
         <div class="container">
-            <div class="section-header text-center fade-in-up">
-                <span class="section-label">Experience</span>
-                <h2>Tasting & Tours</h2>
-                <p>Join us for guided tours of our organic vineyards and historic cellars, paired with our finest selections</p>
-            </div>
-
-            <div class="flex gap-3 flex-col lg:flex-row items-center fade-in-up">
-                <div class="feature-img">
-                    <img src="../../templates_and_more/SITO INTERNET/Immagini/PY2A0411-legno bianco uva autunno.jpg" alt="Tasting experience">
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon">✦</div>
+                    <h3>Territory</h3>
+                    <p>Valpolicella Classica—historic slopes at altitude, shaped by patient nature.</p>
                 </div>
-                <div class="flex-1 lg:flex-none">
-                    <h3>Elegance in Every Glass</h3>
-                    <p>Discover the passion behind every bottle. From hand-harvested grapes to artisanal winemaking using only copper and sulfur protection since 1885.</p>
-                    <div class="flex gap-2 flex-col sm:flex-row">
-                        <a href="events.html" class="btn btn-primary">Book Tasting</a>
-                        <a href="contacts.html" class="btn btn-outline">Contact Us</a>
-                    </div>
+                <div class="value-item">
+                    <div class="value-icon">⟡</div>
+                    <h3>Sustainability</h3>
+                    <p>Organic practices since 2009, crafted with respect and restraint.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">⌁</div>
+                    <h3>Craftsmanship</h3>
+                    <p>Artisanal winemaking, careful selections, and time-led maturation.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">❖</div>
+                    <h3>Hospitality</h3>
+                    <p>Visits and tastings guided by emotion, not hurry.</p>
                 </div>
             </div>
         </div>
@@ -229,13 +281,13 @@
                 <div class="footer-links">
                     <h4>Visit</h4>
                     <ul>
-                        <li><a href="events.html">Events</a></li>
+                        <li style="display:none"><a style="display:none" href="events.html">Events</a></li>
                         <li><a href="contacts.html">Contacts</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Tenuta Chevalier. All rights reserved.</p>
+                <p>&copy; 2026 Tenuta Chevalier. All rights reserved.</p>
                 <p>Crafted with passion in Valpolicella Classica</p>
             </div>
         </div>
@@ -243,3 +295,4 @@
 
 </body>
 </html>
+
