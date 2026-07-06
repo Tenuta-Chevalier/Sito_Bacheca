@@ -457,10 +457,23 @@ p {
     color: var(--color-main-gold);
 }
 
-.card-body p {
+/* Keep wine card text height consistent: fixed height block */
+.wine-card .card-body p {
     font-size: 0.95rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 11.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+
 }
+
+
+/* Optional button style if you later add full text */
+.wine-more {
+    display: none;
+}
+
 
 /* ---- Wine Cards Specific ---- */
 .wine-card .wine-meta {
