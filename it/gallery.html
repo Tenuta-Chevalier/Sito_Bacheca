@@ -6,13 +6,13 @@
     <meta name="description" content="Galleria fotografica di Tenuta Chevalier - Vigneti, vendemmia, invecchiamento in botte e vita della tenuta in Valpolicella Classica.">
     <meta name="author" content="Mattia Faccin">
     <title>Galleria - Tenuta Chevalier</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/colors.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="/assets/js/main.js" defer></script>
-<script src="/assets/scripts/lang-switch.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/scripts/lang-switch.js" defer></script>
 </head>
 <body>
 
@@ -27,7 +27,7 @@
                 <li><a href="company.html">Azienda</a></li>
                 <li><a href="wines.html">Vini</a></li>
                 <li><a href="gallery.html" class="active">Galleria</a></li>
-                <li style="display:none"><a style="display:none" href="events.html">Eventi</a></li>
+                <li ><a  href="events.html">Eventi</a></li>
                 <li><a href="contacts.html">Contatti</a></li>
                 <li class="lang-switch"><a href="../en/gallery.html">EN</a></li>
             </ul>
@@ -46,14 +46,14 @@
         <a href="company.html">Azienda</a>
         <a href="wines.html">Vini</a>
         <a href="gallery.html" class="active">Galleria</a>
-        <a style="display:none" href="events.html">Eventi</a>
+        <a  href="events.html">Eventi</a>
         <a href="contacts.html">Contatti</a>
         <a class="lang-switch" href="../en/gallery.html">EN</a>
     </div>
 
     <!-- Hero -->
     <section class="hero hero-sm">
-        <div class="hero-bg" style="background-image: url('/assets/images/AmaroneClassico.jpeg');"></div>
+        <div class="hero-bg" style="background-image: url('../assets/images/AmaroneClassico.jpeg');"></div>
 
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -67,47 +67,160 @@
     <!-- Gallery -->
     <section class="section-padding-lg bg-anthrax">
         <div class="container">
-        <div class="gallery-grid">
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/AmaroneClassico.jpeg" alt="Amarone della Valpolicella Classico DOCG" />
+            <div class="gallery-slideshow fade-in-up" id="gallerySlideshow">
+                <div class="gallery-slides">
+                    <div class="gallery-slide active">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/AmaroneClassico.jpeg" alt="Amarone della Valpolicella Classico DOCG" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/ValpollicellaClassico.jpeg" alt="Valpolicella Classico DOC" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/ValpollicellaClassicoSuperiore.jpeg" alt="Valpolicella Classico Superiore" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/RocchettoCorvinaVerona1.jpg" alt="Rocchetto IGT Rosso Verona" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/RocchettoCorvinaVerona_2x1.jpg" alt="Rocchetto IGT Rosso Verona" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/ReciotoFront.jpeg" alt="Recioto" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/Recioto2x1.jpeg" alt="Recioto" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/Recioto2x2.jpeg" alt="Recioto" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/GrappaDiAmarone.jpeg" alt="Grappa di Amarone" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/Miele_fiori.jpeg" alt="Miele di fiori" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/OlioExtraVOliva.jpeg" alt="Olio Extra Vergine" />
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-item" data-gallery="slide">
+                            <img src="../assets/images/MieleAcacia.jpeg" alt="Miele di acacia" />
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/ValpollicellaClassico.jpeg" alt="Valpolicella Classico DOC" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/ValpollicellaRipasso.jpeg" alt="Valpolicella Classico Superiore" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/RocchettoCorvinaVerona1.jpg" alt="Rocchetto IGT Rosso Verona" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/RocchettoCorvinaVerona_2x1.jpg" alt="Rocchetto IGT Rosso Verona" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/ReciotoFront.jpeg" alt="Recioto" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/Recioto2x1.jpeg" alt="Recioto" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/Recioto2x2.jpeg" alt="Recioto" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/GrappaDiAmarone.jpeg" alt="Grappa di Amarone" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/Miele_fiori.jpeg" alt="Miele di fiori" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/OlioExtraVOliva.jpeg" alt="Olio Extra Vergine" />
-                </div>
-                <div class="gallery-item fade-in-up">
-                    <img src="/assets/images/MieleAcacia.jpeg" alt="Miele di acacia" />
+
+                <div class="gallery-controls" aria-hidden="false">
+                    <div class="controls-left">
+                        <button class="gallery-btn" type="button" id="galleryPrev" aria-label="Immagine precedente">&#10094;</button>
+                    </div>
+
+                    <div class="gallery-dots" id="galleryDots" aria-label="Navigazione immagini"></div>
+
+                    <div class="controls-right">
+                        <button class="gallery-btn" type="button" id="galleryPlayPause" aria-label="Metti in pausa slideshow">&#10074;&#10074;</button>
+                        <button class="gallery-btn" type="button" id="galleryNext" aria-label="Immagine successiva">&#10095;</button>
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
+
+    <script>
+        (function() {
+            const root = document.getElementById('gallerySlideshow');
+            if (!root) return;
+
+            const slides = Array.from(root.querySelectorAll('.gallery-slide'));
+            const dotsWrap = document.getElementById('galleryDots');
+            const btnPrev = document.getElementById('galleryPrev');
+            const btnNext = document.getElementById('galleryNext');
+            const btnPlayPause = document.getElementById('galleryPlayPause');
+
+            if (!slides.length || !dotsWrap) return;
+
+            let index = 0;
+            let isPlaying = true;
+            const intervalMs = 4500;
+            let timer = null;
+
+            function setActive(i) {
+                index = (i + slides.length) % slides.length;
+                slides.forEach((s, idx) => s.classList.toggle('active', idx === index));
+
+                const dots = dotsWrap.querySelectorAll('.gallery-dot');
+                dots.forEach((d, idx) => d.classList.toggle('active', idx === index));
+            }
+
+            function next() { setActive(index + 1); }
+            function prev() { setActive(index - 1); }
+
+            function pause() {
+                isPlaying = false;
+                if (timer) clearInterval(timer);
+                timer = null;
+                if (btnPlayPause) {
+                    btnPlayPause.innerHTML = '&#9654;';
+                    btnPlayPause.setAttribute('aria-label', 'Riproduci slideshow');
+                }
+            }
+
+            function play() {
+                isPlaying = true;
+                if (btnPlayPause) {
+                    btnPlayPause.innerHTML = '&#10074;&#10074;';
+                    btnPlayPause.setAttribute('aria-label', 'Metti in pausa slideshow');
+                }
+                if (!timer) timer = setInterval(next, intervalMs);
+            }
+
+            function togglePlayPause() {
+                if (isPlaying) pause(); else play();
+            }
+
+            slides.forEach(function(_, i) {
+                const b = document.createElement('button');
+                b.type = 'button';
+                b.className = 'gallery-dot' + (i === index ? ' active' : '');
+                b.setAttribute('aria-label', 'Vai all\'immagine ' + (i + 1));
+                b.addEventListener('click', function() { setActive(i); });
+                dotsWrap.appendChild(b);
+            });
+
+            btnPrev && btnPrev.addEventListener('click', function() { prev(); });
+            btnNext && btnNext.addEventListener('click', function() { next(); });
+            btnPlayPause && btnPlayPause.addEventListener('click', togglePlayPause);
+
+            root.addEventListener('mouseenter', pause);
+            root.addEventListener('mouseleave', function() { if (!document.hidden) play(); });
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) pause(); else play();
+            });
+
+            play();
+        })();
+    </script>
 
     <!-- CTA -->
     <section class="section-padding bg-black text-center">
@@ -142,7 +255,7 @@
                 <div class="footer-links">
                     <h4>Visita</h4>
                     <ul>
-                        <li style="display:none"><a style="display:none" href="events.html">Eventi</a></li>
+                        <li ><a  href="events.html">Eventi</a></li>
                         <li><a href="contacts.html">Contatti</a></li>
                     </ul>
                 </div>
@@ -156,3 +269,4 @@
 
 </body>
 </html>
+

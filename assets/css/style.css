@@ -457,10 +457,23 @@ p {
     color: var(--color-main-gold);
 }
 
-.card-body p {
+/* Keep wine card text height consistent: fixed height block */
+.wine-card .card-body p {
     font-size: 0.95rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 11.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+
 }
+
+
+/* Optional button style if you later add full text */
+.wine-more {
+    display: none;
+}
+
 
 /* ---- Wine Cards Specific ---- */
 .wine-card .wine-meta {
@@ -942,7 +955,8 @@ p {
     line-height: 1.6;
 }
 
-/* ---- Gallery ---- */
+/* ---- Gallery (Slideshow) ---- */
+/* Kept lightbox compatibility: .gallery-item img inside a click target */
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -955,7 +969,6 @@ p {
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid var(--color-gold-border);
-    aspect-ratio: 4 / 3;
 }
 
 .gallery-item img {
@@ -966,7 +979,7 @@ p {
 }
 
 .gallery-item:hover img {
-    transform: scale(1.08);
+    transform: scale(1.04);
 }
 
 .gallery-item::after {
@@ -981,6 +994,144 @@ p {
 .gallery-item:hover::after {
     opacity: 1;
 }
+
+/* Slideshow layout */
+.gallery-slideshow {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(198,161,106,0.25);
+    background: rgba(0,0,0,0.18);
+    min-height: 220px;
+}
+
+
+.gallery-slides {
+    position: relative;
+    width: 100%;
+}
+
+.gallery-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: translateX(16px) scale(1.01);
+    transition: opacity 700ms ease, transform 700ms ease;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.gallery-slide.active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    z-index: 1;
+    pointer-events: auto;
+}
+
+
+/* Keep aspect ratio similar to old grid */
+.gallery-slideshow .gallery-slide figure,
+.gallery-slideshow .gallery-item {
+    width: 100%;
+}
+
+.gallery-slideshow {
+    aspect-ratio: 16 / 9;
+}
+
+.gallery-slide .gallery-item {
+    height: 100%;
+}
+
+.gallery-slide .gallery-item img {
+    height: 100%;
+}
+
+/* Controls */
+.gallery-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1rem 0.9rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+    z-index: 20;
+}
+
+.gallery-controls .controls-left,
+.gallery-controls .controls-right {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.gallery-btn {
+    pointer-events: auto;
+
+    border: 1px solid var(--color-main-gold);
+    background: rgba(11,11,11,0.35);
+    color: var(--color-main-gold);
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.gallery-btn:hover {
+    background: rgba(198,161,106,0.18);
+    border-color: var(--color-gold-light);
+    color: var(--color-gold-light);
+    transform: translateY(-1px);
+}
+
+.gallery-play {
+    font-size: 1rem;
+    user-select: none;
+}
+
+.gallery-dots {
+    pointer-events: auto;
+    display: flex;
+    gap: 0.45rem;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.gallery-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    border: 1px solid rgba(198,161,106,0.55);
+    background: rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition: transform var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.gallery-dot.active {
+    background: var(--color-main-gold);
+    border-color: var(--color-gold-light);
+    transform: scale(1.2);
+}
+
+@media (max-width: 540px) {
+    .gallery-controls {
+        padding: 0.8rem 0.8rem 0.7rem;
+    }
+    .gallery-dots {
+        justify-content: flex-end;
+    }
+}
+
 
 /* ---- Lightbox ---- */
 .lightbox {
