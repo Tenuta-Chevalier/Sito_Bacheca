@@ -1,21 +1,23 @@
-# TODO - Update wines.html sections
+# TODO - Image links + description cards
 
-## Step 1 (done)
-Create scaffolding and requirements summary.
+## Plan
+- [ ] Audit current image/pdf references in:
+  - [ ] en/wines.html
+  - [ ] it/wines.html
+  - [ ] en/home.html
+  - [ ] it/home.html
+- [ ] Fix all broken image references for product/wine cards by using the correct filenames that exist under `assets/images/`.
+- [ ] Ensure every wine and product “card” opens the correct `Desc...` PDF/PNG in `assets/images/`.
+  - [ ] Add missing clickable links for products (non-wine section) in both `en/wines.html` and `it/wines.html`.
+- [ ] Split the Spumanti category into two cards/images (since both are now separated) and correct image sizing so most images remain visible.
+- [ ] Adjust CSS/image sizing rules if needed (card image height / object-fit / fixed heights) to improve visibility across responsive breakpoints.
+- [ ] Quick visual sanity check by opening:
+  - [ ] en/wines.html
+  - [ ] it/wines.html
+  - [ ] en/home.html
+  - [ ] it/home.html
 
-## Step 2 (pending)
-Update `en/wines.html`:
-- Add “Spumanti Novità” section (EN text, **no** (Novità) parenthetical).
-- Add non-wine products section with simple cards (image + title only):
-  - Acacia Honey, Millefiori Honey, Extra Virgin Olive Oil
-  - Amarone Grappa, Amarone Grappa 12 Months, Amarone Grappa 5 Years
-- Fix Pensiero Passito image to `../assets/images/PensieroPassitoIGT.jpg`.
-- Add bottle sizes block under wines grid (before CTA) + 2 images (BottleSize1/2).
-
-## Step 3 (pending)
-Update `it/wines.html` with the same structure, in Italian.
-
-## Step 4 (done)
-Verify in browser (manual): no broken images and correct ordering.
-
+## Notes
+- `Pic...` files are the visible card images.
+- `Desc...` files are the clickable targets (PDF/PNG) opened by the card link.
 
