@@ -1,13 +1,13 @@
 # TODO
 
-- [ ] Finish fixing image references around all pages in both folders.
+- [X] Finish fixing image references around all pages in both folders.
   - Applies to both `en/` and `it/` folders.
 
 - [ ] Fixing gallery.
 
-- [ ] Write down what description text and/or pictures are missing.
+- [X] Write down what description text and/or pictures are missing. (only Ripasso Desc missing)
 
-- [ ] Re-organise text, e.g. bottle sizes reworded as the customer explained (costumer’s notes).
+- [X] Re-organise text, e.g. bottle sizes reworded as the customer explained (costumer’s notes).
 
 - [ ] Verify on the DOCX file (`PERFEZIONAMENTO SITO CHEVALIERTEST.docx`) if everything asked has been done.
 
