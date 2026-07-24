@@ -832,7 +832,7 @@ p {
 .wine-card .card-img[style] {
     height: 100% !important;
     width: 100% !important;
-    object-fit: cover !important;
+    object-fit: scale-down;
 }
 
 
