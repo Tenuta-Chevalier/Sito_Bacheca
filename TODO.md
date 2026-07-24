@@ -1,21 +1,13 @@
-# TODO - Update wines.html sections
+# TODO
 
-## Step 1 (done)
-Create scaffolding and requirements summary.
+- [X] Finish fixing image references around all pages in both folders.
+  - Applies to both `en/` and `it/` folders.
 
-## Step 2 (pending)
-Update `en/wines.html`:
-- Add “Spumanti Novità” section (EN text, **no** (Novità) parenthetical).
-- Add non-wine products section with simple cards (image + title only):
-  - Acacia Honey, Millefiori Honey, Extra Virgin Olive Oil
-  - Amarone Grappa, Amarone Grappa 12 Months, Amarone Grappa 5 Years
-- Fix Pensiero Passito image to `../assets/images/PensieroPassitoIGT.jpg`.
-- Add bottle sizes block under wines grid (before CTA) + 2 images (BottleSize1/2).
+- [ ] Fixing gallery.
 
-## Step 3 (pending)
-Update `it/wines.html` with the same structure, in Italian.
+- [X] Write down what description text and/or pictures are missing. (only Ripasso Desc missing)
 
-## Step 4 (done)
-Verify in browser (manual): no broken images and correct ordering.
+- [X] Re-organise text, e.g. bottle sizes reworded as the customer explained (costumer’s notes).
 
+- [ ] Verify on the DOCX file (`PERFEZIONAMENTO SITO CHEVALIERTEST.docx`) if everything asked has been done.
 
