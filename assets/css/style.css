@@ -981,11 +981,11 @@ p {
     line-height: 1.6;
 }
 
-/* ---- Gallery (Slideshow) ---- */
+/* ---- Gallery grid / Lightbox ---- */
 /* Kept lightbox compatibility: .gallery-item img inside a click target */
 .gallery-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
     gap: 1rem;
 }
 
@@ -995,6 +995,8 @@ p {
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid var(--color-gold-border);
+    background: rgba(20, 20, 18, 0.75);
+    aspect-ratio: 1 / 1;
 }
 
 .gallery-item img {
@@ -1019,6 +1021,24 @@ p {
 
 .gallery-item:hover::after {
     opacity: 1;
+}
+
+@media (max-width: 1100px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+    }
+}
+
+@media (max-width: 420px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Slideshow layout */
@@ -1158,6 +1178,34 @@ p {
     }
 }
 
+/* ---- Home legend image section ---- */
+.legend-section {
+    background: var(--color-black, #14110d);
+    border-top: 1px solid rgba(198,161,106,0.18);
+    border-bottom: 1px solid rgba(198,161,106,0.18);
+}
+
+.legend-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legend-image {
+    width: min(100%, 1240px);
+    max-height: 620px;
+    object-fit: contain;
+    border-radius: 4px;
+    border: 1px solid var(--color-gold-border);
+    background: rgba(255,255,255,0.03);
+}
+
+@media (max-width: 720px) {
+    .legend-image {
+        width: 100%;
+        max-height: none;
+    }
+}
 
 /* ---- Lightbox ---- */
 .lightbox {
