@@ -136,12 +136,38 @@ function initLightbox() {
 /* ---- Scroll Reveal Animations ---- */
 function initScrollAnimations() {
     const animatedElements = document.querySelectorAll('.fade-in-up');
-    if (animatedElements.length === 0) return;
+
+    if (!animatedElements.length) return;
+
+    function revealElement(element) {
+        if (!element || element.classList.contains('visible')) return;
+        element.classList.add('visible');
+    }
+
+    const revealInViewport = function() {
+        animatedElements.forEach(function(el) {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= window.innerHeight + 120) {
+                revealElement(el);
+            }
+        });
+    };
+
+    revealInViewport();
+    requestAnimationFrame(revealInViewport);
+    setTimeout(revealInViewport, 150);
+    window.addEventListener('scroll', revealInViewport, { passive: true });
+    window.addEventListener('resize', revealInViewport, { passive: true });
+    window.addEventListener('load', revealInViewport, { passive: true });
+
+    if (!('IntersectionObserver' in window)) {
+        return;
+    }
 
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+                revealElement(entry.target);
                 observer.unobserve(entry.target);
             }
         });
@@ -154,4 +180,3 @@ function initScrollAnimations() {
         observer.observe(el);
     });
 }
-
